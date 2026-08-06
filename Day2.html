@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 2｜廣東話講義</title>
+
+<style>
+@page{
+    size:A4;
+    margin:2cm;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:15px;
+    line-height:1.8;
+    color:#333;
+    background:#fff;
+}
+
+.page{
+    page-break-after:always;
+}
+
+.page:last-child{
+    page-break-after:auto;
+}
+
+h1{
+    background:#123A73;
+    color:#fff;
+    padding:14px 22px;
+    border-radius:12px;
+    font-size:28px;
+    margin:0 0 28px;
+}
+
+h2{
+    color:#123A73;
+    border-bottom:3px solid #123A73;
+    padding-bottom:6px;
+    margin:36px 0 18px;
+    font-size:22px;
+}
+
+h3{
+    color:#234E8D;
+    margin:28px 0 12px;
+    font-size:18px;
+}
+
+.summary-table{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #D8E2EF;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:32px;
+}
+
+.summary-table th{
+    background:#123A73;
+    color:#fff;
+    padding:12px;
+    text-align:left;
+    font-size:15px;
+}
+
+.summary-table td{
+    padding:11px 12px;
+    border-bottom:1px solid #E5EAF2;
+    vertical-align:top;
+}
+
+.summary-table tr:nth-child(even){
+    background:#F7F9FC;
+}
+
+.summary-table th:nth-child(1),
+.summary-table td:nth-child(1){
+    width:8%;
+    text-align:center;
+}
+
+.summary-table td:nth-child(2){
+    width:20%;
+    color:#123A73;
+    font-weight:bold;
+}
+
+.summary-table th:nth-child(2){
+    width:20%;
+    color:#fff;
+}
+
+.summary-table th:nth-child(3),
+.summary-table td:nth-child(3){
+    width:72%;
+}
+
+.definition{
+    border:1px solid #DDE5F0;
+    border-radius:10px;
+    padding:16px 20px;
+    margin-bottom:18px;
+    page-break-inside:avoid;
+}
+
+.definition p{
+    margin:6px 0;
+}
+
+.term{
+    font-size:20px;
+    color:#123A73;
+    font-weight:bold;
+}
+
+.note{
+    background:#FFF8D9;
+    border-left:8px solid #E5B300;
+    border-radius:8px;
+    padding:14px 18px;
+    margin:15px 0;
+}
+
+.dialogue{
+    border:1px solid #E2E2E2;
+    border-radius:10px;
+    padding:16px 20px;
+    margin-bottom:18px;
+    page-break-inside:avoid;
+}
+
+.dialogue p{
+    margin:8px 0;
+}
+
+.exercise{
+    border:1px solid #DDE5F0;
+    border-radius:10px;
+    padding:16px 20px;
+    margin-bottom:18px;
+    page-break-inside:avoid;
+}
+
+.answer{
+    background:#F7F9FC;
+    border-left:5px solid #123A73;
+    padding:12px 16px;
+    margin-top:12px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<h1>📅 Day 2｜廣東話講義</h1>
+
+<h2>總覽</h2>
+
+<table class="summary-table">
+<thead>
+<tr>
+<th>編號</th>
+<th>單字</th>
+<th>例句</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>1</td><td>返工</td><td>我聽日返工。
+	<span onclick="document.getElementById('audio1').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio1">
+    	<source src="audio/Day2/S1.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+<tr><td>2</td><td>放工</td><td>我六點放工。
+	<span onclick="document.getElementById('audio2').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio2">
+    	<source src="audio/Day2/S2.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+<tr><td>3</td><td>搭車</td><td>我每日搭車返屋企。
+	<span onclick="document.getElementById('audio3').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio3">
+    	<source src="audio/Day2/S3.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+<tr><td>4</td><td>地鐵</td><td>我坐地鐵去尖沙咀。
+	<span onclick="document.getElementById('audio4').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio4">
+    	<source src="audio/Day2/S4.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+<tr><td>5</td><td>車站</td><td>車站喺前面。
+	<span onclick="document.getElementById('audio5').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio5">
+    	<source src="audio/Day2/S5.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+<tr><td>6</td><td>等</td><td>你等我一陣。
+	<span onclick="document.getElementById('audio6').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio6">
+    	<source src="audio/Day2/S6.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+<tr><td>7</td><td>遲到</td><td>唔好遲到呀。
+	<span onclick="document.getElementById('audio7').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio7">
+    	<source src="audio/Day2/S7.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+<tr><td>8</td><td>快</td><td>你行快啲啦。
+	<span onclick="document.getElementById('audio8').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio8">
+    	<source src="audio/Day2/S8.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+<tr><td>9</td><td>慢</td><td>唔使咁慢。
+	<span onclick="document.getElementById('audio9').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio9">
+    	<source src="audio/Day2/S9.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+<tr><td>10</td><td>約</td><td>我哋約星期六食飯。
+	<span onclick="document.getElementById('audio10').play()" style="cursor:pointer;">🎧</span>
+	<audio id="audio10">
+    	<source src="audio/Day2/S10.mp3" type="audio/mpeg">
+	</audio>
+</td></tr>
+</tbody>
+</table>
+
+
+<h2>單字解析</h2>
+
+<div class="definition">
+<div class="term">1. 返工（faan1 gung1）</div>
+<p><strong>中文：</strong>上班／去工作</p>
+<p><strong>例句：</strong>我聽日返工。（ngo5 ting1 jat6 faan1 gung1.）</p>
+<p><strong>翻譯：</strong>我明天上班。</p>
+</div>
+
+<div class="definition">
+<div class="term">2. 放工（fong3 gung1）</div>
+<p><strong>中文：</strong>下班</p>
+<p><strong>例句：</strong>我六點放工。（ngo5 luk6 dim2 fong3 gung1.）</p>
+<p><strong>翻譯：</strong>我六點下班。</p>
+</div>
+
+<div class="definition">
+<div class="term">3. 搭車（daap3 ce1）</div>
+<p><strong>中文：</strong>搭車／乘坐交通工具</p>
+<p><strong>例句：</strong>我每日搭車返屋企。（ngo5 mui5 jat6 daap3 ce1 faan1 uk1 kei2.）</p>
+<p><strong>翻譯：</strong>我每天搭車回家。</p>
+</div>
+
+<div class="definition">
+<div class="term">4. 地鐵（dei6 tit3）</div>
+<p><strong>中文：</strong>捷運／地下鐵</p>
+<p><strong>例句：</strong>我坐地鐵去尖沙咀。（ngo5 co5 dei6 tit3 heoi3 zim1 saa1 zeoi2.）</p>
+<p><strong>翻譯：</strong>我坐地鐵去尖沙咀。</p>
+</div>
+
+<div class="definition">
+<div class="term">5. 車站（ce1 zaam6）</div>
+<p><strong>中文：</strong>車站</p>
+<p><strong>例句：</strong>車站喺前面。（ce1 zaam6 hai2 cin4 min6.）</p>
+<p><strong>翻譯：</strong>車站在前面。</p>
+</div>
+
+<div class="definition">
+<div class="term">6. 等（dang2）</div>
+<p><strong>中文：</strong>等候</p>
+<p><strong>例句：</strong>你等我一陣。（nei5 dang2 ngo5 jat1 zan6.）</p>
+<p><strong>翻譯：</strong>你等我一下。</p>
+</div>
+
+<div class="definition">
+<div class="term">7. 遲到（ci4 dou3）</div>
+<p><strong>中文：</strong>遲到</p>
+<p><strong>例句：</strong>唔好遲到呀。（m4 hou2 ci4 dou3 aa3.）</p>
+<p><strong>翻譯：</strong>不要遲到。</p>
+</div>
+
+<div class="definition">
+<div class="term">8. 快（faai3）</div>
+<p><strong>中文：</strong>快</p>
+<p><strong>例句：</strong>你行快啲啦。（nei5 haang4 faai3 di1 laa1.）</p>
+<p><strong>翻譯：</strong>你走快一點啦。</p>
+</div>
+
+<div class="definition">
+<div class="term">9. 慢（maan6）</div>
+<p><strong>中文：</strong>慢</p>
+<p><strong>例句：</strong>唔使咁慢。（m4 sai2 gam3 maan6.）</p>
+<p><strong>翻譯：</strong>不用這麼慢。</p>
+</div>
+
+<div class="definition">
+<div class="term">10. 約（joek3）</div>
+<p><strong>中文：</strong>約定／約人</p>
+<p><strong>例句：</strong>我哋約星期六食飯。（ngo5 dei6 joek3 sing1 kei4 luk6 sik6 faan6.）</p>
+<p><strong>翻譯：</strong>我們約星期六吃飯。</p>
+</div>
+
+</div>
+
+
+<div class="page">
+
+<h2>文法</h2>
+
+<h3>廣東腦切換：動作時間放後面</h3>
+
+<div class="note">
+<strong>💡 兩個重點：</strong><br>
+1. 時間詞通常放在動作前。<br>
+2. 中文「一下、一點」常用「啲」表示。
+</div>
+
+
+<h3>文法一｜時間詞 + 動作</h3>
+
+<div class="note">
+<strong>💡 意思：</strong><br>
+廣東話通常直接把時間放在句子前，再接動作。
+</div>
+
+<p><strong>例句：</strong>我今晚放工。</p>
+<p><strong>拼音：</strong>ngo5 gam1 maan5 fong3 gung1.</p>
+<p><strong>翻譯：</strong>我今晚下班。</p>
+
+
+<h3>文法二｜動詞 + 啲 表示程度調整</h3>
+
+<div class="note">
+<strong>💡 意思：</strong><br>
+放在動詞或形容詞後面，表示「一點點」。
+</div>
+
+<p><strong>例句：</strong>行快啲。</p>
+<p><strong>拼音：</strong>haang4 faai3 di1.</p>
+<p><strong>翻譯：</strong>走快一點。</p>
+
+
+<h3>文法三｜唔好 + 動詞</h3>
+
+<div class="note">
+<strong>💡 意思：</strong><br>
+表示提醒或勸告別人不要做某件事。
+</div>
+
+<p><strong>例句：</strong>唔好遲到呀。</p>
+<p><strong>拼音：</strong>m4 hou2 ci4 dou3 aa3.</p>
+<p><strong>翻譯：</strong>不要遲到。</p>
+
+
+<h2>生活實用對答</h2>
+
+<div class="dialogue">
+<p><strong>❓ 問：</strong>你今日返工呀？</p>
+<p><strong>💬 答：</strong>係呀，要返工。</p>
+<p><strong>💡 中文：</strong>你今天上班嗎？／是啊，要上班。</p>
+</div>
+
+<div class="dialogue">
+<p><strong>❓ 問：</strong>幾點放工呀？</p>
+<p><strong>💬 答：</strong>六點放工。</p>
+<p><strong>💡 中文：</strong>幾點下班？／六點下班。</p>
+</div>
+
+<div class="dialogue">
+<p><strong>❓ 問：</strong>你點去公司呀？</p>
+<p><strong>💬 答：</strong>我搭地鐵去。</p>
+<p><strong>💡 中文：</strong>你怎麼去公司？／我搭地鐵去。</p>
+</div>
+
+<div class="dialogue">
+<p><strong>❓ 問：</strong>你等緊邊個呀？</p>
+<p><strong>💬 答：</strong>我等緊朋友。</p>
+<p><strong>💡 中文：</strong>你正在等誰？／我正在等朋友。</p>
+</div>
+
+</div>
+
+
+<div class="page">
+
+<h2>中翻粵練習</h2>
+
+<div class="exercise">
+<p><strong>1. 我明天上班。</strong></p>
+<div class="answer">
+💬 我聽日返工。<br>
+🗣️ ngo5 ting1 jat6 faan1 gung1
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>2. 我六點下班。</strong></p>
+<div class="answer">
+💬 我六點放工。<br>
+🗣️ ngo5 luk6 dim2 fong3 gung1
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>3. 我每天搭車回家。</strong></p>
+<div class="answer">
+💬 我每日搭車返屋企。<br>
+🗣️ ngo5 mui5 jat6 daap3 ce1 faan1 uk1 kei2
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>4. 我坐地鐵去尖沙咀。</strong></p>
+<div class="answer">
+💬 我坐地鐵去尖沙咀。<br>
+🗣️ ngo5 co5 dei6 tit3 heoi3 zim1 saa1 zeoi2
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>5. 你等我一下，不要遲到。</strong></p>
+<div class="answer">
+💬 你等我一陣，唔好遲到呀。<br>
+🗣️ nei5 dang2 ngo5 jat1 zan6, m4 hou2 ci4 dou3 aa3
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>6. 車站在前面。</strong></p>
+<div class="answer">
+💬 車站喺前面。<br>
+🗣️ ce1 zaam6 hai2 cin4 min6
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>7. 你走快一點，不用這麼慢。</strong></p>
+<div class="answer">
+💬 你行快啲啦，唔使咁慢。<br>
+🗣️ nei5 haang4 faai3 di1 laa1, m4 sai2 gam3 maan6
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>8. 我們約星期六一起吃飯吧。</strong></p>
+<div class="answer">
+💬 我哋約星期六一齊食飯啦。<br>
+🗣️ ngo5 dei6 joek3 sing1 kei4 luk6 jat1 cai4 sik6 faan6 laa1
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 5｜廣東話講義</title>
+
+<style>
+@page{
+    size:A4;
+    margin:2cm;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:15px;
+    line-height:1.8;
+    color:#333;
+    background:#fff;
+}
+
+.page{
+    page-break-after:always;
+}
+
+.page:last-child{
+    page-break-after:auto;
+}
+
+h1{
+    background:#123A73;
+    color:#fff;
+    padding:14px 22px;
+    border-radius:12px;
+    font-size:28px;
+    margin:0 0 28px;
+}
+
+h2{
+    color:#123A73;
+    border-bottom:3px solid #123A73;
+    padding-bottom:6px;
+    margin:36px 0 18px;
+    font-size:22px;
+}
+
+h3{
+    color:#234E8D;
+    margin:28px 0 12px;
+    font-size:18px;
+}
+
+.summary-table{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #D8E2EF;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:32px;
+}
+
+.summary-table th{
+    background:#123A73;
+    color:#fff;
+    padding:12px;
+    text-align:left;
+    font-size:15px;
+}
+
+.summary-table td{
+    padding:11px 12px;
+    border-bottom:1px solid #E5EAF2;
+    vertical-align:top;
+}
+
+.summary-table tr:nth-child(even){
+    background:#F7F9FC;
+}
+
+.summary-table th:nth-child(1),
+.summary-table td:nth-child(1){
+    width:8%;
+    text-align:center;
+}
+
+.summary-table td:nth-child(2){
+    width:20%;
+    color:#123A73;
+    font-weight:bold;
+}
+
+.summary-table th:nth-child(2){
+    width:20%;
+    color:#fff;
+}
+
+.summary-table th:nth-child(3),
+.summary-table td:nth-child(3){
+    width:72%;
+}
+
+.definition{
+    border:1px solid #DDE5F0;
+    border-radius:10px;
+    padding:16px 20px;
+    margin-bottom:18px;
+    page-break-inside:avoid;
+}
+
+.definition p{
+    margin:6px 0;
+}
+
+.term{
+    font-size:20px;
+    color:#123A73;
+    font-weight:bold;
+}
+
+.note{
+    background:#FFF8D9;
+    border-left:8px solid #E5B300;
+    border-radius:8px;
+    padding:14px 18px;
+    margin:15px 0;
+}
+
+.dialogue{
+    border:1px solid #E2E2E2;
+    border-radius:10px;
+    padding:16px 20px;
+    margin-bottom:18px;
+    page-break-inside:avoid;
+}
+
+.dialogue p{
+    margin:8px 0;
+}
+
+.exercise{
+    border:1px solid #DDE5F0;
+    border-radius:10px;
+    padding:16px 20px;
+    margin-bottom:18px;
+    page-break-inside:avoid;
+}
+
+.answer{
+    background:#F7F9FC;
+    border-left:5px solid #123A73;
+    padding:12px 16px;
+    margin-top:12px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<h1>📅 Day 5｜廣東話講義</h1>
+
+<h2>總覽</h2>
+
+<table class="summary-table">
+<thead>
+<tr>
+<th>編號</th>
+<th>單字</th>
+<th>例句</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>1</td><td>搭</td><td>我每日搭地鐵返工。
+<span onclick="document.getElementById('audio1').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio1">
+<source src="audio/Day5/S1.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+
+<tr><td>2</td><td>上車</td><td>下一個站上車。
+<span onclick="document.getElementById('audio2').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio2">
+<source src="audio/Day5/S2.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+
+<tr><td>3</td><td>落車</td><td>我要喺尖沙咀落車。
+<span onclick="document.getElementById('audio3').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio3">
+<source src="audio/Day5/S3.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+
+<tr><td>4</td><td>轉車</td><td>去迪士尼要轉車。
+<span onclick="document.getElementById('audio4').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio4">
+<source src="audio/Day5/S4.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+
+<tr><td>5</td><td>八達通</td><td>我用八達通搭車。
+<span onclick="document.getElementById('audio5').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio5">
+<source src="audio/Day5/S5.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+
+<tr><td>6</td><td>車站</td><td>車站好多人。
+<span onclick="document.getElementById('audio6').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio6">
+<source src="audio/Day5/S6.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+
+<tr><td>7</td><td>月台</td><td>請喺月台等車。
+<span onclick="document.getElementById('audio7').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio7">
+<source src="audio/Day5/S7.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+
+<tr><td>8</td><td>過海</td><td>呢班巴士會過海。
+<span onclick="document.getElementById('audio8').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio8">
+<source src="audio/Day5/S8.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+
+<tr><td>9</td><td>坐</td><td>坐前面會舒服啲。
+<span onclick="document.getElementById('audio9').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio9">
+<source src="audio/Day5/S9.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+
+<tr><td>10</td><td>到站</td><td>到站之後記得落車。
+<span onclick="document.getElementById('audio10').play()" style="cursor:pointer;">🎧</span>
+<audio id="audio10">
+<source src="audio/Day5/S10.mp3" type="audio/mpeg">
+</audio>
+</td></tr>
+</tbody>
+</table>
+
+<h2>單字解析</h2>
+
+<div class="definition">
+<div class="term">1. 搭（daap3）</div>
+<p><strong>中文：</strong>搭（交通工具）</p>
+<p><strong>例句：</strong>我每日搭地鐵返工。（ngo5 mui5 jat6 daap3 dei6 tit3 faan1 gung1.）</p>
+<p><strong>翻譯：</strong>我每天搭地鐵上班。</p>
+</div>
+
+<div class="definition">
+<div class="term">2. 上車（soeng5 ce1）</div>
+<p><strong>中文：</strong>上車</p>
+<p><strong>例句：</strong>下一個站上車。（haa6 jat1 go3 zaam6 soeng5 ce1.）</p>
+<p><strong>翻譯：</strong>下一站上車。</p>
+</div>
+
+<div class="definition">
+<div class="term">3. 落車（lok6 ce1）</div>
+<p><strong>中文：</strong>下車</p>
+<p><strong>例句：</strong>我要喺尖沙咀落車。（ngo5 jiu3 hai2 zim1 saa1 zeoi2 lok6 ce1.）</p>
+<p><strong>翻譯：</strong>我要在尖沙咀下車。</p>
+</div>
+
+<div class="definition">
+<div class="term">4. 轉車（zyun2 ce1）</div>
+<p><strong>中文：</strong>轉車</p>
+<p><strong>例句：</strong>去迪士尼要轉車。（heoi3 dik6 si6 nei4 jiu3 zyun2 ce1.）</p>
+<p><strong>翻譯：</strong>去迪士尼要轉車。</p>
+</div>
+
+<div class="definition">
+<div class="term">5. 八達通（baat3 daat6 tung1）</div>
+<p><strong>中文：</strong>八達通（香港交通卡）</p>
+<p><strong>例句：</strong>我用八達通搭車。（ngo5 jung6 baat3 daat6 tung1 daap3 ce1.）</p>
+<p><strong>翻譯：</strong>我用八達通搭車。</p>
+</div>
+
+<div class="definition">
+<div class="term">6. 車站（ce1 zaam6）</div>
+<p><strong>中文：</strong>車站</p>
+<p><strong>例句：</strong>車站好多人。（ce1 zaam6 hou2 do1 jan4.）</p>
+<p><strong>翻譯：</strong>車站很多人。</p>
+</div>
+
+<div class="definition">
+<div class="term">7. 月台（jyut6 toi4）</div>
+<p><strong>中文：</strong>月台／月台區</p>
+<p><strong>例句：</strong>請喺月台等車。（cing2 hai2 jyut6 toi4 dang2 ce1.）</p>
+<p><strong>翻譯：</strong>請在月台等車。</p>
+</div>
+
+<div class="definition">
+<div class="term">8. 過海（gwo3 hoi2）</div>
+<p><strong>中文：</strong>過海（往返港島與九龍）</p>
+<p><strong>例句：</strong>呢班巴士會過海。（ni1 baan1 baa1 si2 wui5 gwo3 hoi2.）</p>
+<p><strong>翻譯：</strong>這班巴士會過海。</p>
+</div>
+
+<div class="definition">
+<div class="term">9. 坐（co5）</div>
+<p><strong>中文：</strong>坐</p>
+<p><strong>例句：</strong>坐前面會舒服啲。（co5 cin4 min6 wui5 syu1 fuk6 di1.）</p>
+<p><strong>翻譯：</strong>坐前面會舒服一點。</p>
+</div>
+
+<div class="definition">
+<div class="term">10. 到站（dou3 zaam6）</div>
+<p><strong>中文：</strong>到站</p>
+<p><strong>例句：</strong>到站之後記得落車。（dou3 zaam6 zi1 hau6 gei3 dak1 lok6 ce1.）</p>
+<p><strong>翻譯：</strong>到站之後記得下車。</p>
+</div>
+
+</div>
+
+<div class="page">
+
+<h2>文法</h2>
+
+<h3>文法一｜搭 + 交通工具</h3>
+
+<div class="note">
+<strong>💡 意思：</strong><br>
+在香港，「搭」是搭乘交通工具最自然的說法。<br><br>
+<strong>⚠️ 台灣人常見錯誤：</strong><br>
+台灣常說「坐捷運、坐公車」，香港則幾乎都說：<br>
+✅ 搭地鐵<br>
+✅ 搭巴士<br>
+✅ 搭小巴<br>
+✅ 搭的士
+</div>
+
+<p><strong>例句：</strong>我每日搭地鐵返工。</p>
+<p><strong>拼音：</strong>ngo5 mui5 jat6 daap3 dei6 tit3 faan1 gung1.</p>
+<p><strong>翻譯：</strong>我每天搭地鐵上班。</p>
+
+<h3>文法二｜上車／落車</h3>
+
+<div class="note">
+<strong>💡 意思：</strong><br>
+香港固定使用「上車、落車」來表示搭乘與離開交通工具。<br><br>
+<strong>⚠️ 台灣人容易把「下車」直接翻成「下車」，但廣東話固定說：</strong><br>
+✅ 上車<br>
+✅ 落車
+</div>
+
+<p><strong>例句：</strong>我要喺尖沙咀落車。</p>
+<p><strong>拼音：</strong>ngo5 jiu3 hai2 zim1 saa1 zeoi2 lok6 ce1.</p>
+<p><strong>翻譯：</strong>我要在尖沙咀下車。</p>
+
+<h3>文法三｜過海</h3>
+
+<div class="note">
+<strong>💡 意思：</strong><br>
+香港人口中的「過海」，通常不是泛指渡海，而是專指往返港島與九龍，是非常具有香港特色的口語。<br><br>
+<strong>⚠️ 香港人很常說：</strong><br>
+去過海<br>
+搭過海巴士<br>
+過海隧道
+</div>
+
+<p><strong>例句：</strong>呢班巴士會過海。</p>
+<p><strong>拼音：</strong>ni1 baan1 baa1 si2 wui5 gwo3 hoi2.</p>
+<p><strong>翻譯：</strong>這班巴士會過海。</p>
+
+<h2>生活實用對答</h2>
+
+<div class="dialogue">
+<p><strong>❓ 問：</strong>你今日搭咩車呀？</p>
+<p><strong>💬 答：</strong>我搭地鐵。</p>
+<p><strong>💡 中文：</strong>你今天搭什麼車？／我搭地鐵。</p>
+</div>
+
+<div class="dialogue">
+<p><strong>❓ 問：</strong>去尖沙咀使唔使轉車？</p>
+<p><strong>💬 答：</strong>要轉一次車。</p>
+<p><strong>💡 中文：</strong>去尖沙咀需要轉車嗎？／要轉一次車。</p>
+</div>
+
+<div class="dialogue">
+<p><strong>❓ 問：</strong>你喺邊個站落車呀？</p>
+<p><strong>💬 答：</strong>我喺中環站落車。</p>
+<p><strong>💡 中文：</strong>你在哪一站下車？／我在中環站下車。</p>
+</div>
+
+<div class="dialogue">
+<p><strong>❓ 問：</strong>你有冇八達通呀？</p>
+<p><strong>💬 答：</strong>有呀，我成日用八達通。</p>
+<p><strong>💡 中文：</strong>你有八達通嗎？／有啊，我每天都用八達通。</p>
+</div>
+
+<div class="dialogue">
+<p><strong>❓ 問：</strong>呢班巴士過唔過海呀？</p>
+<p><strong>💬 答：</strong>過海㗎。</p>
+<p><strong>💡 中文：</strong>這班巴士會不會過海？／會過海。</p>
+</div>
+
+</div>
+
+<div class="page">
+
+<h2>中翻粵練習</h2>
+
+<div class="exercise">
+<p><strong>1. 我每天搭地鐵上班。</strong></p>
+<div class="answer">
+💬 我每日搭地鐵返工。<br>
+🗣️ ngo5 mui5 jat6 daap3 dei6 tit3 faan1 gung1
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>2. 我要在尖沙咀下車。</strong></p>
+<div class="answer">
+💬 我要喺尖沙咀落車。<br>
+🗣️ ngo5 jiu3 hai2 zim1 saa1 zeoi2 lok6 ce1
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>3. 去迪士尼要轉車。</strong></p>
+<div class="answer">
+💬 去迪士尼要轉車。<br>
+🗣️ heoi3 dik6 si6 nei4 jiu3 zyun2 ce1
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>4. 我用八達通搭車。</strong></p>
+<div class="answer">
+💬 我用八達通搭車。<br>
+🗣️ ngo5 jung6 baat3 daat6 tung1 daap3 ce1
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>5. 請在月台等車。</strong></p>
+<div class="answer">
+💬 請喺月台等車。<br>
+🗣️ cing2 hai2 jyut6 toi4 dang2 ce1
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>6. 這班巴士會過海。</strong></p>
+<div class="answer">
+💬 呢班巴士會過海。<br>
+🗣️ ni1 baan1 baa1 si2 wui5 gwo3 hoi2
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>7. 到站之後記得下車。</strong></p>
+<div class="answer">
+💬 到站之後記得落車。<br>
+🗣️ dou3 zaam6 zi1 hau6 gei3 dak1 lok6 ce1
+</div>
+</div>
+
+<div class="exercise">
+<p><strong>8. 你今天搭什麼車？</strong></p>
+<div class="answer">
+💬 你今日搭咩車呀？<br>
+🗣️ nei5 gam1 jat6 daap3 me1 ce1 aa3
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
